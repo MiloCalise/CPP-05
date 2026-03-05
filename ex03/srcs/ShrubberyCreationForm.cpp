@@ -6,7 +6,7 @@
 /*   By: miltavar <miltavar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 12:02:05 by miltavar          #+#    #+#             */
-/*   Updated: 2026/01/22 15:14:33 by miltavar         ###   ########.fr       */
+/*   Updated: 2026/03/05 15:09:59 by miltavar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 
 void	ShrubberyCreationForm::executeAction() const
 {
-	std::fstream	out(this->getName().append("_shrubbery").c_str());
+	std::ofstream	out(this->getName().append("_shrubbery").c_str());
 	for (int i = 0; i < 5; i++)
 		{
 			out <<

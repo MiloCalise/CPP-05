@@ -6,7 +6,7 @@
 /*   By: miltavar <miltavar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 16:51:52 by miltavar          #+#    #+#             */
-/*   Updated: 2026/01/21 20:05:21 by miltavar         ###   ########.fr       */
+/*   Updated: 2026/03/05 15:11:01 by miltavar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,7 @@ int	main(void)
 	{
 		Bureaucrat	Mike("Mike", 150);
 		std::cout << Mike << std::endl;
-		try
-		{
-			Mike.incrementGrade();
-		}
-		catch(const std::exception& e)
-		{
-			std::cerr << e.what() << '\n';
-		}
-	}
-	catch(const std::exception& e)
-	{
-		std::cerr << e.what() << '\n';
+		Mike.incrementGrade();
 	}
 	catch (std::exception &e)
 	{
